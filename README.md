@@ -1,17 +1,15 @@
-# **Deep Learning based Speech Quality Model**
-This work demonstrates how the selection of an appropriate speech feature can result in better speech quality and fulfilling the expectation of human to perceive better quality of experience (QoE) in noisy environments while using different VoIP applications, such as Microsoft Skype, Apple FaceTime, Google Meet. The internet service provider can measure and monitor the real-time speech quality of the end-user using the deep learning-based speech quality model. Moreover, it could also be helpful to the internet service providers in recognizing the possible impairments in their services and then deploying the QoE management actions to rectify them. To this end, this work investigates a series of deep neural network (DNN)-based objective no-reference speech quality models (SQMs) in accurately measuring speech quality. Three speech features, namely, line spectral frequencies (LSF), mel-frequency cepstral coefficients (MFCC), and multi-resolution auditory model (MRAM) are extracted from the speech signal after processing it through a voice activity detector (VAD). A series of DNN-based SQMs is, then, developed by incorporating either a single or a mixture of speech features. The standard no-reference speech quality prediction model (P.563) is employed as a baseline model. Results demonstrate that the DNN-based SQM trained with the MRAM feature performs better in accurately measuring speech quality as compared to the baseline model and other DNN-based SQMs trained with different speech features or their mixtures.
+# **Implicit Wiener Filtering for Speech Enhancement**
+This work demonstrates how the adjustment of appropriate hyperparameters of our proposed implicit Wiener filter algorithm can result in a better spectral reconstruction (speech enhancement) of the speech signal in non-stationary noisy environments. For example, in mobile telephony, noise sources with a marked non-stationary spectral signature include vehicles, machines, and other speakers to name a few. Our proposed implicit Wiener filter algorithm recursively estimates the noise power spectral density and reconstructs the target speech signal in the frequency domain by judiciously selecting the hyperparameters. The recursive noise estimation approach relies on the past and the present power spectral values. To evaluate the performance of proposed algorithm, speech uttered by a male and a female speaker degraded by non-stationary noise produced e.g. by babbling, cars, street noise, trains, restaurants, and airport noise are used from the NOIZEUS speech corpus. Objective speech quality measures such as the log-likelihood ratio (LLR), the cepstral distance (CD), and the weighted spectral slope distance (WSS) are calculated for the enhanced speech signals and compared to the conventional spectral subtraction method. Results demonstrate that the proposed algorithm provides consistent and improved enhancement performance with all tested noise types.
 
 # **Requirements:**
 * NOIZEUS Speech Corpus (Publicly available)
-* TensorFlow
-* Python
+* Matlab
 
 ## **License**
 * The project is licensed under the GNU General Public License v3.0.
 * You may obtain a copy of the License at https://www.gnu.org/licenses/gpl-3.0.en.html
 
 # **Citing Work**
-* Rahul Jaiswal, Performance Analysis of Deep Learning Based Speech Quality Model with Mixture of Features,
-24th IEEE International Symposium on Multimedia (2022), pp. 240-244. https://ieeexplore.ieee.org/document/10019706
+* Rahul Jaiswal and Daniel Romero, Implicit Wiener Filtering for Speech Enhancement In Non-Stationary Noise, 11th IEEE International Conference on Information Science and Technology, (2021), pp. 39-47. https://ieeexplore.ieee.org/document/9440639 
 
 
